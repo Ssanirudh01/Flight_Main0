@@ -109,7 +109,7 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <configuration>
-                    <webXml>Build\target\Demo-0.0.1-SNAPSHOT\web.xml</webXml>
+                    <webXml>web.xml</webXml>
                 </configuration>
             </plugin>
         </plugins>
