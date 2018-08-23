@@ -17,15 +17,7 @@
 			</properties>
 		</profile>
 	</profiles>
-	
-	<plugin>            
-  		<groupId>org.apache.maven.plugins</groupId>
-  		<artifactId>maven-war-plugin</artifactId>
-  		<configuration>
-    			<webXml>src\main\webapp\WEB-INF\web.xml</webXml>        
-  		</configuration>
-	</plugin>
-	
+		
 	
 	<dependencies>
 
@@ -110,4 +102,16 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+	
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>WebContent\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
