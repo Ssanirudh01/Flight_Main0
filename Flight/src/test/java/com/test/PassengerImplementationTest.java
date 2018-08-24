@@ -31,8 +31,8 @@ public class PassengerImplementationTest {
 	
 	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
     Date date = new Date();  
-    String h = (formatter.format(date)).substring(12,14);
-    String m = (formatter.format(date)).substring(15,17);  
+    String h = (formatter.format(date)).substring(11,13);
+    String m = (formatter.format(date)).substring(14,16);  
 	@Test
 	public void testPassenger()
 	{
