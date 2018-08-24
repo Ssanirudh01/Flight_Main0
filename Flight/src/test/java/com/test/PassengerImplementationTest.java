@@ -2,6 +2,9 @@ package com.test;
 
 import static org.junit.Assert.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.hibernate.SessionFactory;
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -26,7 +29,10 @@ public class PassengerImplementationTest {
 
 	PassengerDAO passengerDAO=ctx.getBean(PassengerDAO.class);
 	
-	String x = (""+Math.random()).substring(0, 2);
+	SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");  
+    Date date = new Date();  
+    String h = (formatter.format(date)).substring(12,14);
+    String m = (formatter.format(date)).substring(15,17);  
 	@Test
 	public void testPassenger()
 	{
@@ -37,7 +43,7 @@ public class PassengerImplementationTest {
 		passenger.setFirstName("sunil");
 		passenger.setMiddleName("babu");
 		passenger.setLastName("xyz");
-		passenger.setPassportNumber("PA"+ x +"18722");
+		passenger.setPassportNumber("PASS"+h+m+"16");
 		passenger.setMealPreferences("NVG");
 
 		assertTrue(passengerDAO.newPassenger(passenger));
