@@ -43,7 +43,7 @@ public class PassengerImplementationTest {
 		passenger.setFirstName("sunil");
 		passenger.setMiddleName("babu");
 		passenger.setLastName("xyz");
-		passenger.setPassportNumber("PASS"+h+m+"16");
+		passenger.setPassportNumber("PASS"+h+m);
 		passenger.setMealPreferences("NVG");
 
 		assertTrue(passengerDAO.newPassenger(passenger));
