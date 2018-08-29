@@ -25,7 +25,7 @@ public class PassengerImplementationTest {
 	
 		ctx = new ClassPathXmlApplicationContext("mybeans.xml");
 		System.out.println(ctx);
-		System.out.println("Check");
+		System.out.println("CheckNow");
 	}
 
 	PassengerDAO passengerDAO=ctx.getBean(PassengerDAO.class);
